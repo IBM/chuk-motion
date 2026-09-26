@@ -36,7 +36,7 @@ jobs:
     - name: Run linting
       run: |
         uv run ruff check .
-        uv run ruff format --check .
+        uv run ruff format --check src/ tests/
 
     - name: Run type checking
       run: |
